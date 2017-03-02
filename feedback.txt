@@ -1,0 +1,21 @@
+Project:
+An implementation of the show Million Pound Drop
+
+Report:
+- well written and detailed, some typos
+
+Code:
+- works fine. 
+- The only glitch is 1e+06 instead of 1000000. This was SO EASY to fix! On line 179, just use 
+    
+    set(handles.Bal,'string',num2str(balance));
+
+  instead of 
+
+    set(handles.Bal,'string',balance);
+
+  In this way, balance remains a numerical object, but the appearance in the text box is a string. 
+- professional use of Github, with full use of its functionality. I'm puzzled by what you say in the report about syncing and overwriting: yes, before working on a branch you have to sync it! Then you make changes. Each branch should be one new feature. 
+
+
+Mark: 100
